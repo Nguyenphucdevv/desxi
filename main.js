@@ -7,14 +7,14 @@ imageSizes.forEach((size) => {
   const link = document.createElement("link");
   link.rel = "prefetch";
   link.as = "image";
-  link.href = `./image/${size}.png`;
+  link.href = `./image/${size}.jpg`;
   document.head.appendChild(link);
 });
 
 // Ensure image 0 is loaded immediately
-img.src = "./image/0.png";
+img.src = "./image/0.jpg";
 
 changeImg.addEventListener("change", function () {
   const selectedSize = this.value;
-  img.src = `./image/${selectedSize}.png`;
+  img.src = `./image/${selectedSize}.jpg`;
 });
